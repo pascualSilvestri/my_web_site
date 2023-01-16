@@ -1,0 +1,21 @@
+/* boton hacia arriba */
+
+.volverArriba{
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: var(--fondo-azul-btn);
+    border: none;
+    border-radius: 50px;
+    opacity: .8;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color:var( --color-letras);
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top:.5rem;
+} 

@@ -1,0 +1,132 @@
+header{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 0 7rem;
+    margin: 2rem 0 2rem 0;
+}
+
+.presentacion_titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    width: 75%;
+    height: 100%;
+    padding: 0 2rem 0 0;
+}
+
+.titulo_header{
+    font-size: 2.4rem;
+    font-weight: 600;
+    color:var(--color-letras);
+    text-align:start;
+}
+
+.parrafo_header{
+    font-size: 1.1rem;
+    margin: 2rem 0;
+    letter-spacing: 0.1rem;
+}
+
+.sobre_mi__ul_header{
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+}
+
+.sobre_mi__li_header{
+    list-style: none;
+}
+
+.sobre_mi__li_header a{
+    text-decoration: none;
+    color: var(--color-letras);
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin:0 .5rem 0 0;
+}
+
+.sobre_mi__li_header a:hover{
+    font-weight: 500;
+}
+
+
+.img_header{
+    width: 30%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.img_header img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+
+/* Responsividad */
+
+@media only screen and (max-width: 768px){
+    header{
+        padding: 0 1rem;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .presentacion_titulo{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 70%;
+        width: 100%;
+        padding: 0;
+    }
+
+    .titulo_header{
+        font-size: 1.4rem;
+        text-align: justify;
+    }
+
+    .parrafo_header{
+        font-size: .9rem;
+        margin: 1rem 0;
+        text-align: justify;
+        letter-spacing: 0;
+    }
+
+    .sobre_mi__ul_header{
+        width: 100%;
+    }
+    .sobre_mi__li_header a{
+        font-size: .8rem;
+    }
+
+    
+    .sobre_mi__li_header a,i{
+        font-size: .8rem;
+    }
+
+    .img_header{
+        width: 60%;
+        height: 100%;
+        border-radius: 50%;
+        margin-bottom: 2rem;
+    }
+    
+    .img_header img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+    }
+}
+
+
+@media only screen and (max-width: 1025px){
+    .parrafo_header{
+        margin: 2rem 0;
+    }
+    .sobre_mi__ul_header{
+        width: 100%;
+    }
+}

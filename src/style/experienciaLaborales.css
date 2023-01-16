@@ -1,0 +1,32 @@
+.experiencia{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 7rem;
+    width: 100%;
+    height: auto;
+    color: var(--color-letras);
+}
+
+.experiencia_titulo{
+    margin: 3rem 0 ;
+}
+
+.container_experiencia{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/* Responsividad */
+
+@media only screen and (max-width: 600px){
+    .experiencia{
+        padding: 0 1rem;
+    }
+
+}

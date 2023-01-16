@@ -1,0 +1,158 @@
+.contacto{
+    width: 100%;
+    min-height: 90vh;
+    padding: 1rem 10rem;
+    display: flex; /* por ahora cuando funcione el form es display flex*/
+    margin: 5rem 0 0 0 ;
+    background-color: var(--fondo-azul);
+    justify-content: space-between;
+    align-items: center;
+    color:var(--color-letras);
+    box-shadow: 0 0 40px 1px #999;
+}
+
+
+.contacto_img{
+    width: 50%;
+    height:auto;
+    padding: 0 2rem;
+}
+
+.contacto_img img{
+    width: 100%;
+    height: 100%;
+}
+
+.contacto_form{
+    width: 60%;
+    height:auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    box-shadow: 0 0 40px 1px #bbb;
+    padding: 1.5rem;
+    border-radius: 30px;
+    margin-left: 1rem;
+}
+
+.contacto_container_titulo{
+    margin-bottom: 1rem;
+}
+
+.contacto_form__titulo{
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+}
+
+.contacto_form__parrafo{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.div_label_contacto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    background-color: #ffffff;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 10px 2px #ddd;
+}
+
+.contacto_form__label{
+    border-radius: 10px 10px 0 0;
+    padding: .5rem;
+    opacity: .6;
+}
+
+
+.contacto_form__input{
+    border: none;
+    width: 100%;
+    min-height: 1.5rem;
+    outline: none;
+    padding: 0 0 0 10px;
+    color: var(--color-letras);
+}
+
+.contacto_form__input:focus{
+    border-bottom: 4px solid var(--fondo-azul-btn);
+}
+
+
+
+
+.contacto_mensaje{
+    width: 100%;
+    border: none;
+    height: 10rem;
+    outline: none;
+    padding: 10px;
+}
+
+.contacto_mensaje::placeholder{
+    opacity: .8;
+}
+
+.contacto_btn{
+    margin: 1rem 0;
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--fondo-azul-btn);
+    color: #ffffff;
+    font-size: 1.2rem;
+    font-weight: 500;
+    font-family: var(--font-rawelay);
+}
+
+.mensaje-error{
+    border-radius: 10px 10px 0 0;
+    padding: .5rem;
+    opacity: .6;
+    color:#f54;
+}
+
+/* responsividad */
+
+@media only screen and (max-width: 768px){
+    .contacto{
+        width: 100%;
+        height: auto;
+        padding: 3rem 2rem;
+        margin: 1rem 0 0 0 ;
+        justify-content: center;
+
+    }
+    .contacto_img{
+        display: none;
+    }
+
+    .contacto_form{
+        width: 100%;
+        height:auto;
+        margin: 0;
+    }
+}
+
+
+@media only screen and (max-width: 1025px){
+    .contacto{
+        width: 100%;
+        height: auto;
+        padding: 3rem 1rem;
+        margin: 1rem 0 0 0 ;
+        justify-content: center;
+
+    }
+  
+
+    .contacto_form{
+        width: 100%;
+        height:auto;
+        margin: 0;
+    }
+}
